@@ -1,0 +1,30 @@
+.container{
+    width: 100%;
+}
+#banner{
+    background-image: url("/img/bg_menu.jpg");
+    color: white;
+}
+#banner h1{
+    text-transform: uppercase;
+    text-align: center;
+    font-size: 60px;
+    font-family:'Bowlby One SC';
+}
+#banner h2{
+    text-transform: uppercase;
+    text-align: center;
+    font-size: 30px;
+}
+#video_teaser{
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+#menu img{
+    width: 15%;
+    
+}
+
+#menu a:hover{
+    background-color: rgb(4, 203, 114);
+}
