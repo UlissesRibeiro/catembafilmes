@@ -1,15 +1,15 @@
 /*CLASSES*/
 .vid1{
-    width: 370px;
+    width: 540px;
     text-align: center;
 }
 .vid2{
-    width: 370px;
+    width: 540px;
     text-align: center;
 }
 
 .vid3{
-    width: 370px;
+    width: 540px;
     text-align: center;
 }
 
@@ -17,16 +17,19 @@
     width: 100%;
 }
 
-.col{
-    margin: px;
+#conteudoPort{
+    
+    padding-left: 80px;
 }
 
 body{
     background-color: black ;
 }
+
 #conteudo{
     margin-top: 80px;
     margin-bottom: -300px;
+
 }
 #banner{
     background-image: url("/img/bg_menu.jpg");
@@ -47,6 +50,7 @@ a h1{
 
 }
 #rodape{
+    text-align: center;
     color: white;
     width: 100%;
     margin-top: 550px;
@@ -80,7 +84,9 @@ a h1{
         background-color: rgb(102, 0, 255);
         height:230px ;
     }
-
+#conteudoPort{
+    padding-left: 0px;
+}
     #banner iframe{
         height: 380px;
     }
