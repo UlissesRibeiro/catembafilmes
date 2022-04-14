@@ -71,7 +71,7 @@ a h1{
     background-color: rgb(4, 203, 114);
 }
 
-@media screen and (max-width: 580px) and (min-width: 300px){
+@media screen and (max-width: 812px) and (min-width: 300px){
 
     #banner{
         width: 100%;
@@ -96,6 +96,9 @@ a h1{
     .vid3{
         width: 100%;
         text-align: center;
+        
     }
-
+text{
+    font-size: 14px;
+}
   }
