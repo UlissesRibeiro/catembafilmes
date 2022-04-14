@@ -1,15 +1,57 @@
+/*CLASSES*/
+.vid1{
+    width: 370px;
+    text-align: center;
+}
+.vid2{
+    width: 370px;
+    text-align: center;
+}
+
+.vid3{
+    width: 370px;
+    text-align: center;
+}
+
 .container{
     width: 100%;
+}
+
+.col{
+    margin: px;
+}
+
+body{
+    background-color: black ;
+}
+#conteudo{
+    margin-top: 80px;
+    margin-bottom: -300px;
 }
 #banner{
     background-image: url("/img/bg_menu.jpg");
     color: white;
 }
-#banner h1{
+a{
+    text-decoration: none;
+    color: white;
+}
+a:hover{
+    color:rgb(4, 203, 114);
+}
+a h1{
     text-transform: uppercase;
     text-align: center;
     font-size: 60px;
     font-family:'Bowlby One SC';
+
+}
+#rodape{
+    color: white;
+    width: 100%;
+    margin-top: 550px;
+    padding-top: 50px;
+    background-color:rgb(4, 203, 114);
 }
 #banner h2{
     text-transform: uppercase;
@@ -28,3 +70,32 @@
 #menu a:hover{
     background-color: rgb(4, 203, 114);
 }
+
+@media screen and (max-width: 580px) and (min-width: 300px){
+
+    #banner{
+        width: 100%;
+        height: 100vh;
+        margin-top: 5px;
+        background-color: rgb(102, 0, 255);
+        height:230px ;
+    }
+
+    #banner iframe{
+        height: 380px;
+    }
+    .vid1{
+        width: 100%;
+        text-align: center;
+    }
+    .vid2{
+        width: 100%;
+        text-align: center;
+    }
+
+    .vid3{
+        width: 100%;
+        text-align: center;
+    }
+
+  }

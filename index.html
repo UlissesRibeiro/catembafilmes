@@ -16,33 +16,93 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Anton&family=Bowlby+One+SC&family=Paytone+One&display=swap" rel="stylesheet">
     <title>Catemba Filmes</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script> 
     <!-- Css e JS do projeto -->
-    <link rel="stylesheet" href="/css/styles.css">
+    <link rel="stylesheet" href="css/styles.css">
+
 </head>
 <body>
     <div class="container">
         <div id="banner">
-        <h1>catemba filmes</h1>
+        <a href="index.html" id="cfTitle"><h1>catemba filmes</h1></a>
             <h2>produções audiovisual</h2>
             <div class="d-flex justify-content-between align-items-center">
                 <div class="list-group list-group-horizontal" id="menu">
-                <a href="#" role="button" class="btn btn-sm">
+                <a href="#" role="button" class="btn btn-sm" >
                     <img src="/img/foto_branco.png" alt="">
                 </a>
-                <a href="#" role="button" class="btn btn-sm">
+                <a href="#" role="button" class="btn btn-sm" id="btnAudio">
                     <img src="/img/audio_branco.png" alt="">
                 </a>
-                <a href="#" role="button" class="btn btn-sm">
+                <a href="#" role="button" class="btn btn-sm" id="btnVideo">
                     <img src="/img/video_branco.png" alt="">
                 </a>  
                 </div>
             </div>
         </div>
-        <div class="d-flex justify-content-center" id="video_teaser">
-            <iframe width="100%" height="480px" src="https://www.youtube.com/embed/tNaEmgvtMcM" title="YouTube video player"
-                frameborder="0" allow="accelerometer; autoplay; gyroscope; picture-in-picture"
-                    allowfullscreen></iframe>
+
+        <div class="d-flex justify-content-center" id="conteudo">
+            
         </div>
+
+        <script>
+            $(document).ready(function(){
+            $("#btnVideo").click(function(){
+                $("#conteudo").load("videos.html");
+            });
+            });
+
+            $(document).ready(function(){
+            $("#btnAudio").click(function(){
+                $("#conteudo").load("audios.html");
+            });
+            });
+            </script>
     </div>
+
+    <section id="rodape">
+        <!--rodape inicio-->
+                 <!-- Footer-->
+                 <footer class="footer text-center">
+                   <div class="container">
+                       <div class="row">
+                           <!-- Footer Location-->
+                           <div class="col-lg-4 mb-5 mb-lg-0">
+                               <h4 class="text-uppercase mb-4"> </h4>
+                               <p class="lead mb-0">
+                                   Alto do Mateus, João Pessoa - PB
+                                   <br />
+                                   
+                               </p>
+                           </div>
+                           <!-- Footer Social Icons-->
+                           <div class="col-lg-4 mb-5 mb-lg-0">
+                               <h4 class="text-uppercase mb-4">Sociais</h4>
+                               <a class="btn btn-outline-light btn-social mx-1" href="" target="_blank"><i class="bi bi-instagram"></i></a>
+                               <a class="btn btn-outline-light btn-social mx-1" href="https://www.youtube.com/channel/UCckxLe2ua2R7bBzmRc9DlrA/videos/" target="_blank"><i class="bi bi-youtube"></i></a>
+                               
+                           </div>
+                           <!-- Footer About Text-->
+                           <div class="col-lg-4">
+                               <h4 class="text-uppercase mb-4">Contato</h4>
+                               <ul class="nav flex-column">
+                                   <li class="nav-item mb-2">E-mail : <strong>
+                                       mail@mail.com</strong> </li>
+                                   <li class="nav-item mb-2">Telefone : <strong>83 00000-0000</strong></li>
+                                   
+                                   <!--<li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Pricing</a></li>
+                                   <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">FAQs</a></li>
+                                   <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">About</a></li>-->
+                                 </ul>
+                           </div>
+                       </div>
+                   </div>
+               </footer>
+               <!-- Copyright Section-->
+               <div class="copyright py-4 text-center text-white">
+                   <div class="container"><small>&copy;<strong><a href="#" style="text-decoration: none;color: white;"> Catemba Filmes</a></strong> - 2022</small></div>
+               </div>
+ 
+     </section>
 </body>
 </html>
